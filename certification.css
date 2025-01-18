@@ -1,0 +1,171 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 8px 0; /* Adjusted for consistency */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px; /* Slightly reduced for smaller screens */
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #00bcd4;
+}
+
+/* Certifications Section Styles */
+.certifications-section {
+    padding: 80px 10px; /* Reduced padding */
+    background-image: url('Background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll; /* Fixed issue on mobile */
+    text-align: center;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.certifications-section h1 {
+    font-size: 28px; /* Adjusted for better scaling */
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.certifications-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.certifications-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 15px;
+    width: 90%; /* Adjusted for mobile */
+    max-width: 300px; /* Reduced for better scaling */
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certifications-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.certifications-card h2 {
+    font-size: 20px; /* Reduced for better scaling */
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.certifications-card p {
+    font-size: 14px; /* Adjusted for smaller screens */
+    color: #444;
+    margin: 5px 0;
+}
+
+.certifications-card .download-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px; /* Adjusted for smaller screens */
+    background-color: #00bcd4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.certifications-card .download-link:hover {
+    background-color: #008c9e;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0; /* Adjusted padding */
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 12px; /* Reduced for smaller screens */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        padding: 8px;
+    }
+
+    .navbar a {
+        margin: 5px;
+    }
+
+    .certifications-section {
+        padding: 60px 5px; /* Adjusted for smaller screens */
+    }
+
+    .certifications-card {
+        width: 95%; /* Adjusted to fit smaller screens */
+        padding: 10px;
+    }
+
+    .certifications-card h2 {
+        font-size: 18px;
+    }
+
+    .certifications-card p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .navbar a {
+        font-size: 12px; /* Smaller font for narrow screens */
+        margin: 3px 0;
+    }
+
+    .certifications-section h1 {
+        font-size: 22px;
+    }
+
+    .certifications-card {
+        width: 100%; /* Full width on small screens */
+    }
+
+    .certifications-card h2 {
+        font-size: 16px;
+    }
+
+    .certifications-card p {
+        font-size: 12px;
+    }
+}
